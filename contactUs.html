@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/homepageStyle.css">
+<link rel="stylesheet" href="css/contactUsStyle.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="homepageBG">
+
+<!-- Header starts here -->
+<header class="header fixed-top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <a href="homepage.html" class="logo"><i class="fas fa-tooth"></i>Medrano <span>Dental</span> Clinic</a>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center">
+                <nav class="nav">
+                    <a href="homepage.html">Home</a>
+                    <a href="service.html">Services</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="aboutUs.html">About us</a>
+                    <a href="contactUs.php">Contact us</a>
+                </nav>
+                <a href="contactUs.php" class="link-btn">Make Appointment</a>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header ends here -->
+
+<!-- Contact us starts here -->
+<section class="contactUs-section">
+    <div class="container">
+        <div class="contactUs-card mx-auto">
+            <!-- Left Info -->
+            <div class="contactUs-info">
+                <div>
+                    <h1>Set an appointment.</h1>
+                    <div class="contact-detail">
+                        <div class="contact-label mb-1">Phone</div>
+                        <div class="contact-value">+63 995 380 2010</div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-label mb-1">Email</div>
+                        <div class="contact-value">docjmedrano@yahoo.com</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Form & Image -->
+            <div class="contactUs-form-wrap">
+                <img src="images/dental nurse.jpg" alt="Dental Nurse" class="contactUs-img">
+                <form class="contactUs-form" autocomplete="off">
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="service" class="form-label">Service Needed</label>
+                        <select class="form-select" id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Cleaning">Cleaning</option>
+                            <option value="Tooth Extraction">Tooth Extraction</option>
+                            <option value="Braces">Braces</option>
+                            <option value="Retainer">Retainer</option>
+                            <option value="Checkup">Checkup</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control" id="description" name="description" rows="3" placeholder="Describe your concern or request"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact us ends here -->
+
+<script src="js/script.js"></script>
+</body>
+</html>

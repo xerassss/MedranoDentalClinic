@@ -1,0 +1,103 @@
+.feedback-section {
+    background: url(../images/homepageBG.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 160px;
+    padding-bottom: 120px;
+    min-height: calc(100vh - 40px); 
+}
+
+
+/* card section ends here */
+.card-text {
+    font-size: 1.5rem;
+}/*feedback section starts here */
+.feedback-section .card {
+    border-radius: 2rem;
+    font-size: 1.35rem;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+}
+.feedback-section .dot {
+    transition: background 0.3s;
+}
+#review-card {
+    width: 500px;
+    min-height: 480px;
+    font-size: 1.5rem;
+    padding: 3rem 2.5rem;
+}
+
+@media (max-width: 991px) {
+    .feedback-section .card,
+    #review-card {
+        max-width: 100%;
+        font-size: 1.1rem;
+        padding: 1.5rem 0.5rem;
+    }
+    .feedback-section .quote-box,
+    .feedback-section .bg-primary {
+        font-size: 1.5rem !important;
+        padding: 2rem 1rem !important;
+    }
+    .feedback-section .quote-box h1,
+    .feedback-section .bg-primary h1 {
+        font-size: 1.7rem !important;
+    }
+    #review-card {
+        width: 100%;
+        min-width: unset;
+        max-width: 100%;
+    }
+    .col-lg-6 {
+        align-items: center !important;
+    }
+}
+
+#review-card .card-title,
+#review-card .card-text,
+#review-author,
+#review-stars {
+    font-size: 1.5rem;
+}
+
+#review-img {
+    max-width: 220px;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+
+#review-text {
+    min-height: 3.5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: flex-start;
+    padding: 0 1rem;
+    justify-content: center;
+}
+
+#review-author {
+    min-height: 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#review-stars {
+    min-height: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#review-card .card-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}

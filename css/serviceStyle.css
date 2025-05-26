@@ -1,0 +1,48 @@
+/* Fade-in animation for service cards */
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.card {
+    opacity: 0;
+    animation: cardFadeIn 0.8s forwards;
+}
+
+/* Staggered delay for each card */
+.row > div:nth-child(1) .card { animation-delay: 0.1s; }
+.row > div:nth-child(2) .card { animation-delay: 0.3s; }
+.row > div:nth-child(3) .card { animation-delay: 0.5s; }
+.row > div:nth-child(4) .card { animation-delay: 0.7s; }
+.row > div:nth-child(5) .card { animation-delay: 0.9s; }
+.row > div:nth-child(6) .card { animation-delay: 1.1s; }
+
+
+
+@media (max-width:768px){
+
+    .service-img {
+        max-width: 90vw;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+    }
+    .card {
+        min-height: 340px; 
+    }
+}
+
+/* Add a background image or color for the services section */
+.services-section {
+    background: url(../images/homepageBG.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}

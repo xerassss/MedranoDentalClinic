@@ -1,0 +1,90 @@
+.about-section {
+    background: url(../images/homepageBG.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    display: flex;
+    align-items: center;
+
+}
+
+    /* about starts here */
+.about-section .row2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-section .row2 .image{
+    flex: 1 1 40rem;
+}
+
+.about-section .row2 .image img{
+    width: 20%;
+    height: 25%;
+    right: 20rem;
+}
+
+.about-section .row .content{
+    flex: 1 1 40rem;
+}
+
+.about-section .row2 .content h3{
+    color: var(--black);
+    font-size: 5rem;
+    line-height: 1.5;
+}
+
+.about-section .row2 .content p{
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 0;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about-section .card-title,
+.about-section .row2 .content h3 {
+    font-size: 3rem; /* or larger as needed */
+}
+
+.about-section .card-text,
+.about-section .row2 .content p {
+    font-size: 2rem; /* or larger as needed */
+}
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header .link-btn{
+        display: none;
+    }
+
+    section{
+    padding: 5rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    section{
+    padding: 3rem 1rem;
+    }
+    /* menu-btn starts here */
+
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+     #menu-btn.fa-times{
+        transform: rotate(180deg);
+     }}
